@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <header>
+            <a href="index.html">
+                <img src="DBU_Shop\LogoShop.png" width="300" alt="DBU_Shop_Logo">
+            </a>
+            <nav>
+                <div>
+                    <a href="https://www.landsholdsshoppen.dk/" <strong>The real shop</strong> </a>
+                </div>
+            </nav>
+        </header>
+        <br>
+        <main style="width:500px;">
+            <section>
+                <h2>Order products form</h2>
+                <form action="form-processing" method="post" id="item-list">
+                    <fieldset>
+                        <legend> Enter your personal details</legend>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                        <br>
+                        <br>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                        <br>
+                        <br>
+                        <label for="dob">Date Of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                        <br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend> Enter your shipping details</legend>
+                        <label for="address">Adress:</label>
+                        <input type="text" id="address" name="address" required>
+                        <br>
+                        <br>
+                        <label for="district">District:</label>
+                        <select id="district" name="district">
+                            <option value="1">District 1</option>
+                            <option value="2">District 2</option>
+                            <option value="3">District 3</option>
+                            <option value="4">District 4</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="city">City:</label>
+                        <select id="city" name="city">
+                            <option value="Saigon">Saigon</option>
+                            <option value="VungTau">Vung Tau</option>
+                            <option value="Hanoi">Hanoi</option>
+                        </select>
+                        <label for="postcode">Postcode:</label>
+                        <input type="text" id="postcode" name="postcode">
+                        <br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Purchase options</legend>
+                        <label for="product-select">Select product(s):</label>
+                        <select id="product-select" name="product" multiple>
+                            <option value="shirtRed">ShirtRed</option>
+                            <option value="shirtLongSleeve">shirtLongSleeve</option>
+                            <option value="keeper">KeeperShirt</option>
+                            <option value="shorts">Shorts</option>
+                            <option value="KeeperShorts">Keeper shorts</option>
+                            <option value="ball">Official Ball</option>
+                            <option value="Cap">Cap</option>
+                            <option value="ClapHat">ClapHat</option>
+                            <option value="hat">Hat</option>
+                        </select>
+                        <p><strong>Hint:</strong> Use Shift/Ctrl key to select multiple products!</p>
+                    </fieldset>
+                    <br>
+                    <input type="submit" value="Place order">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <h4>Gustav Elbroend @ RMIT - Fan of the danish national football team</h4>
+        </footer>
+    </center>
+</body>
+
+</html>
